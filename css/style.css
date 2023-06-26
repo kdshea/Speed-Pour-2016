@@ -1,0 +1,206 @@
+/*
+Project Name: Speed Pour
+FEWD 29 BOS Final Project
+Author: Kate Shea
+Developer @GA in Boston
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+.col-2{
+  width:200px;
+}
+.col-5{
+  width:500px;
+}
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,0,0,1);
+  font-size: 20px;
+  line-height: 1.4;
+  font-family: 'Lato', sans-serif;
+  margin:auto;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* 
+font-family: 'Ultra', serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Merriweather', serif; */
+
+/* Center the container */
+#container {
+	width: 100%;
+	margin: auto;
+}
+
+footer {
+  text-align: right;
+  margin-top: 50px;
+  width: 738px;
+}
+body{
+  height: 400px;
+}
+
+div{
+  margin:auto;
+}
+
+
+footer{
+  clear: both;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+h1{
+  text-align: center;
+  font-size: 150px;
+  color: rgba(156, 0, 0, 1);
+  font-family: "Ultra", serif;
+  text-shadow: 4px 4px 3px rgba(255,255,255,0.6);
+}
+div{
+    text-align: center;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Lato", sans-serif;}
+.page{
+  display:none;
+}
+#pageTwo{
+  vertical-align: middle;
+
+}
+#pageOne{
+  display:block;
+  background-image: url(images/backgroundBottles.png);
+  background-position: center center;
+  min-height:500px;
+  background-size:cover;
+}
+ol{
+  text-align: center;
+}
+li{
+  display: inline;
+  padding: 7px;
+}
+li a{
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  font-size: 30px;
+  text-align: right;
+}
+a:hover{
+  font-size: 40px;
+}
+
+.carouselItem{
+  display:none;
+  margin-bottom: 20px;
+
+}
+#carouselImage{
+  display: block;
+  max-height:500px;
+  margin: auto;
+}
+
+#orderPage, .orderInfo{
+  background:rgba(255,255,255,1);
+  color: rgba(0,0,0,1);
+  text-align: left;
+  font-size:20px;
+  line-height: 1;
+}
+.orderInfo>h2{
+  font-size: 40px;
+  text-align: center;
+  border-top: 6px solid rgba(156,0,0,1);
+  border-bottom: 1px solid rgba(0,0,0,1);
+  margin-top: 20px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(242,242,242,1);
+}
+th {
+    background-color: rgba(156,0,0,1);
+    color: white;
+}
+th, td {
+    border-bottom: 1px solid rgba(0,0,0,1);
+    padding: 15px;
+    text-align: left;
+}
+table{
+  margin:auto;
+  margin-bottom: 50px;
+}
+tr:hover {
+  background-color: rgba(128,128,128,.6)
+}
+.button{
+	display:block;
+  margin: auto;
+	border-style:solid;
+	border-color:#bbb #888 #666 #aaa;
+	border-width:3px 4px 4px 3px;
+	width:9em;
+	height:2em;
+	background:#ccc;
+	color:#333;
+	line-height:2;
+	text-align:center;
+	text-decoration:none;
+	font-weight:900;
+  margin-top: 20px;
+}
+.button:hover{
+	border-color: #666 #aaa #bbb #888;
+	border-width:4px 3px 3px 4px;
+	color:#000;
+}
+
+#orderPageHeader{
+  display:block;
+  background-image: url(images/backgroundBottles.png);
+  background-position: center center;
+  min-height: 400px;
+  background-size:cover;
+  font-size: 100px;
+  }

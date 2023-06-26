@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Speed Pour</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Lato|Merriweather|Pacifico|Ultra" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<!---Nav Bar--->
+				<nav class="navbar">
+					<ul>
+						<li><a class="orderPage" href="#orderPage">View Order Page</a></li>
+						<li><a class="frontBar" href="#frontBarCarousel">Front Bar</a></li>
+						<li><a class="backBar"href="#backBarCarousel">Back Bar</a></li>
+						<li><a class="liquorRoom" href="#liquorRoomCarousel">Liquor Room</a></li>
+					</ul>
+				  </div>
+				</nav>
+
+
+			</header>
+
+			<div class="page" id="pageOne">
+				<h1>SpeedPour</h1>
+				<h2>The Bar Manager's Best Friend<h2>
+				<div ><a class="button" href="#pageTwo" id="startButton">
+					Let's Get Started</a></div>
+			</div>
+
+			<div id="pageTwo" class="page">
+				<h2>Who's counting this week?<h2>
+				<input type="text" id="managerNameInput" placeholder="Your Name">
+				<div ><a href="#pageThree" class="button" id="managerNameButton">Submit
+					</a></div>
+			</div>
+
+			<div id="pageThree" class="page">
+				<h2>Today's Date</h2>
+				<input type=date id="inventoryDate">
+				<div ><a href="#pageFour" class="button" id="inventoryDateButton">Submit
+					</a></div>
+			</div>
+
+			<div id="pageFour" class="page">
+				<h2>Where do you want to start?</h2>
+				<ul id="locationSelect">
+						<li><a class="frontBar" class="button" href="#carousel">Front Bar</a></li>
+						<li><a class="backBar" class="button"href="#carousel">Back Bar</a></li>
+						<li><a class="liquorRoom" class="button"href="#carousel">Liquor Room</a></li>
+					</ul>
+
+			</div>
+
+<!---Bar Carousel--->
+			<div  class="page" id="carousel">
+				<div id="carouselWrapper">
+					<div id="carouselItem"><input id="bottleCount" type="number" placeholder="0.0"> Bottles</div><img id="carouselImage">
+				</div>
+				<div class="buttonWrapper">
+					<div id="Skip" class="button">Next</div>
+					<div id="Back" class="button">Back</div>
+
+				</div>
+			</div>
+
+
+<!--- End of carousel page--->
+			<div id="pageFive" class="page" >
+				<h2 id="endOfLocationMessage"></h2>
+				<h2>Where would you like to continue?</h2>
+				<ul id="locationSelect">
+						<li><a class="frontBar" class="button"href="#carousel">Front Bar</a></li>
+						<li><a class="backBar" class="button"href="carousel">Back Bar</a></li>
+						<li><a class="liquorRoom" class="button"href="#carousel">Liquor Room</a></li>
+						<li><a class="orderPage" class="button" href="#orderPage">I'm done</a></li>
+					</ul>
+			</div>
+<!--- Order Page Table--->
+				<div id="orderPage" class="page">
+					<div 	id="orderPageHeader"><h1>SpeedPour</h1></div>
+					<div id="burkeOrderInfo" class="orderInfo">
+						<h2> Burke Distributing</h2>
+						<h3> Rep: <input type=text placeholder="First Last"></h3>
+						<h3> Order placed on <span contenteditable="true" class="orderDate"></span></h3>
+						<h3> For delivery on <input type=date></h3>
+						<h3> Placed by <span contenteditable="true" class="managerName"></span></h3>
+					</div>
+					<table id="burkeOrder">
+							<tr>
+							<th>Size</th>
+							<th><strong>Liquor</strong></th>
+							<th>Par</th>
+							<th>Total In House</th>
+							<th><strong>Order</strong></th>
+							<th>Price</th>
+							<th>Total</th<>
+							</tr>
+
+							<tr>
+							<td>Liter</td>
+							<td>New Amsterdan Vodka</td>
+							<td>48</td>
+							<td contenteditable="true"><span id="newAmsterdamVodkaInHouse"> </span></td>
+							<td contenteditable="true"><span id="newAmsterdamVodkaOrder"> </span></td>
+							<td contenteditable="true">$<span id="newAmsterdamVodkaPrice">7.24</span></td>
+							<td>$<span id="newAmsterdamVodkaTotal"> </span></td>
+							</tr>
+							<tr>
+						<td>Liter</td>
+						<td>Tanqueray</td>
+						<td>8</td>
+						<td contenteditable="true"><span id="tanquerayInHouse"> </span></td>
+						<td contenteditable="true"><span id="tanquerayOrder"> </span></td>
+						<td contenteditable="true">$<span id="tanquerayPrice">25.99</span></td>
+						<td>$<span id="tanquerayTotal"> </span></td>
+						</tr>
+
+
+							<tr>
+							<td colspan="4"> Total </td>
+							<td colspan="3">$<span id="burkeTotal"> </span></td>
+						</tr>
+
+					</table>
+
+					<div id="unitedOrderInfo" class="orderInfo">
+						<h2> United Liquors</h2>
+						<h3> Rep: <input type=text placeholder="First Last"></h3>
+						<h3> Order placed on <span contenteditable="true" class="orderDate"></span></h3>
+						<h3> For delivery on <input type=date></h3>
+						<h3> Placed by <span contenteditable="true" class="managerName"></span></h3>
+					</div>
+					<table id="unitedOrder">
+							<tr>
+							<th>Size</th>
+							<th><strong>Liquor</strong></th>
+							<th>Par</th>
+							<th>Total In House</th>
+							<th><strong>Order</strong></th>
+							<th>Price</th>
+							<th>Total</th<>
+							</tr>
+
+							<tr>
+							<td>Liter</td>
+							<td>Tito's</td>
+							<td>48</td>
+							<td contenteditable="true"><span id="titosInHouse"> </span></td>
+							<td contenteditable="true"><span id="titosOrder"> </span></td>
+							<td contenteditable="true">$<span id="titosPrice">28.99</span></td>
+							<td>$<span id="titosTotal"> </span></td>
+							</tr>
+							<tr>
+								<td>Liter</td>
+								<td>Ketel</td>
+								<td>18</td>
+								<td contenteditable="true"><span id="ketelInHouse"> </span></td>
+								<td contenteditable="true"><span id="ketelOrder"> </span></td>
+								<td contenteditable="true">$<span id="ketelPrice">27.69</span></td>
+								<td>$<span id="ketelTotal"> </span></td>
+							</tr>
+							<tr>
+						<td>Liter</td>
+						<td>Absolut</td>
+						<td>18</td>
+						<td contenteditable="true"><span id="absolutInHouse"> </span></td>
+						<td contenteditable="true"><span id="absolutOrder"> </span></td>
+						<td contenteditable="true">$<span id="absolutPrice">19.99</span></td>
+						<td>$<span id="absolutTotal"> </span></td>
+						</tr>
+
+							<tr>
+							<td colspan="4"> Total </td>
+							<td colspan="3">$<span id="unitedTotal"> </span></td>
+						</tr>
+
+					</table>
+
+
+				<div id="horizonOrderInfo" class="orderInfo">
+					<h2> Horizon Beverage Group</h2>
+					<h3> Rep: <input type=text placeholder="First Last"></h3>
+					<h3> Order placed on <span contenteditable="true" class="orderDate"></span></h3>
+					<h3> For delivery on <input type=date></h3>
+					<h3> Placed by <span  contenteditable="true" class="managerName"></span></h3>
+				</div>
+				<table id="horizonOrder">
+						<tr>
+						<th>Size</th>
+						<th><strong>Liquor</strong></th>
+						<th>Par</th>
+						<th>Total In House</th>
+						<th><strong>Order</strong></th>
+						<th>Price</th>
+						<th>Total</th<>
+						</tr>
+
+						<tr>
+						<td>Liter</td>
+						<td>Stoli</td>
+						<td>12</td>
+						<td contenteditable="true"><span id="stoliInHouse"> </span></td>
+						<td contenteditable="true"><span id="stoliOrder"> </span></td>
+						<td contenteditable="true">$<span id="stoliPrice">27.69</span></td>
+						<td>$<span id="stoliTotal"> </span></td>
+						</tr>
+
+							<tr>
+						<td>Liter</td>
+						<td>GreyGoose</td>
+						<td>12</td>
+						<td contenteditable="true"><span id="greyGooseInHouse"> </span></td>
+						<td contenteditable="true"><span id="greyGooseOrder"> </span></td>
+						<td contenteditable="true">$<span id="greyGoosePrice">31.99</span></td>
+						<td>$<span id="greyGooseTotal"> </span></td>
+						</tr>
+						<tr>
+						<td>Liter</td>
+						<td>Sapphire</td>
+						<td>6</td>
+						<td contenteditable="true"><span id="SapphireInHouse"> </span></td>
+						<td contenteditable="true"><span id="sapphireOrder"> </span></td>
+						<td contenteditable="true">$<span id="sapphirePrice">29.89</span></td>
+						<td>$<span id="sapphireTotal"> </span></td>
+						</tr>
+
+
+						<tr>
+						<td colspan="4"> Total </td>
+						<td colspan="3">$<span id="horizonTotal"> </span></td>
+					</tr>
+
+				</table>
+			</div>
+
+				<script src="js/main.js"></script>
+
+				</div>
+			</body>
+			</html>
