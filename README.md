@@ -25,7 +25,7 @@ Now, I am fully focused on my freelance business, leveraging my enhanced skill s
 
 If you have any questions or would like to discuss potential opportunities, please feel free to reach out to me. You can contact me  through the following channels:
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://kdshea.com/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Green?style=for-the-badge&logo=ko-fi&logoColor=white)](https://kdshea.com/)
 
 <a href="mailto:daishea@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"></a>
 
